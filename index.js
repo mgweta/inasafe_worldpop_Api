@@ -17,8 +17,6 @@ app.set('view engine', 'ejs');
 
 
 app.post('/api',upload.array(), function(request, response, next) {
-  var json = JSON.parse('{"count":11,"totalPopulation":12043545.114792835,"totalArea":3576039.0251903664,"polygonArea":3548725.419122968}');
-  
   var worldpop = require('worldpop')
   var accessToken = 'pk.eyJ1IjoiZGV2c2VlZCIsImEiOiJWQlQ1NlNVIn0.IT_b8KVeZDvOFZLWF7DpvQ'
 
